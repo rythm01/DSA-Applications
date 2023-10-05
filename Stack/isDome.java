@@ -33,7 +33,7 @@ public class isDome {
                 } else if(st.charAt(++i) != '/') {
                     String tag = "";
                     int j = i-1;
-                    while (st.charAt(j) != '>') {
+                    while (st.charAt(j) != '>' && st.charAt(j) != ' ') {
                         tag += st.charAt(j);
                         j++;
                     }
